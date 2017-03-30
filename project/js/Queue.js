@@ -1,6 +1,6 @@
 
  var stac = new Array();
-var getArray = [2,3,23,2,12,4,34,3,543,5,46,56]
+var getArray = []
 
 
 insertQueue(getArray)
