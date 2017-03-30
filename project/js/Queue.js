@@ -1,6 +1,8 @@
 
+
  var stac = new Array();
-var getArray = []
+var getArray = [runAirone,runAirtwo]
+console.log(getArray)
 
 
 insertQueue(getArray)
@@ -25,7 +27,7 @@ function inQueue(data){
 
 function chackDataQueue(dataQueue){
 
-    if (dataQueue.length <= 4) {
+    if (dataQueue.length <= 1) {
 
        outQueue()
 
