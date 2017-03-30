@@ -4,6 +4,9 @@
 
 <head>
 
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -27,10 +30,9 @@
 
 
 
-    <div class="container-fludid">
+    <div class="container">
 
         <div class=".container-fluid">
-
             <div class="row">
 
 
@@ -42,7 +44,8 @@
                         <div class="well">
                             <div class="form-group">
                                 <h3>Login
-                                    <hr> </h3>
+                                    <hr>
+                                </h3>
                                 <label for="txt_email">Username</label>
                                 <input type="email" class="form-control" id="txt_email" placeholder="Enter email">
                             </div>
@@ -84,15 +87,11 @@
 
 
 
-                <div class="container-fludid">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-7 ">
+                        <div class="col-sm-8 ">
                             <div class="well">
-                                <center>
-                                    <h4>ตึก S</h4>
 
-                                    <hr>
-                                </center>
 
 
                                 <div class="container-fluid">
@@ -107,66 +106,83 @@
                                                         <li class="next"><a href="page3.html" onclick="mySlide('next');"><span aria-hidden="true">&rarr;</span>ถัดไป</a></li>
 
 
+
                                                         <center>
-                                                            <h4>ห้อง S102 </h4>
+                                                            <h4 id="room">ห้อง S102 </h4>
                                                         </center>
 
                                                         <hr>
                                                         <div class="row">
 
 
-                                                            <div class="col-sm-6">
+                                                            <div class="col-lg-4">
                                                                 <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Very_Basic/idea-100.png" title="Idea" width="100">
                                                                 <h4>แสงสว่าง</h4>
 
                                                                 <!--toggle button-->
-                                                                <label id="switch">
-                                                            <input id="Light_Row_One" type="checkbox" checked><div class="slider round"></div></label><br><br>
+                                                                <label class="switch" id="Light_Row_one">
+                                                            <input onclick="Light_Row_one.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div></label><br><br>
 
-                                                                <label id="switch">
+                                                                <label class="switch" id="Light_Row_two">
 
-                                                            <input id="Light_Row_Two" type="checkbox" checked><div class="slider round"></div></label><br><br>
+                                                            <input onclick="Light_Row_two.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div></label><br><br>
 
-                                                                <label id="switch">
-                                                            <input id="Light_Row_Three" type="checkbox" checked><div class="slider round"></div></label><br><br>
+                                                                <label class="switch" id="Light_Row_three">
+                                                            <input onclick="Light_Row_three.set(+this.checked)" type="checkbox" checked><div class="slider round"></div></label><br><br>
 
                                                             </div>
+                                                            <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Household/air_conditioner-100.png" title="Air Conditioner" width="100">
+                                                            <h4>เครื่องปรับอากาศ</h4>
+
+                                                            <!--toggle button-->
+
+                                                            <label class="switch" id="Airone">
+                                                                    <input onclick="Airone.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div> </label><br><br>
+
+                                                            <label class="switch" id="Airtwo">
+                                                                    <input onclick="Airtwo.set(+this.checked)" type="checkbox" checked><div class="slider round"></div> </label><br><br>
+
+                                                        </div>
+                                                        <hr>
 
 
 
 
-                                                            <li>
 
 
-                                                                <div class="col-sm-6">
-                                                                    <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Household/air_conditioner-100.png" title="Air Conditioner" width="100">
-                                                                    <h4>เครื่องปรับอากาศ</h4>
-
-                                                                    <!--toggle button-->
-
-                                                                    <label id="switch">
-                                                                    <input id="Airone" type="checkbox" checked><div class="slider round"></div> </label><br><br>
-
-                                                                    <label id="switch">
-                                                                    <input id="Airtwo" type="checkbox" checked><div class="slider round"></div> </label><br><br>
-
-                                                                </div>
 
 
-                                                </ul>
-                                            </nav>
-                                            </div>
-                                            </div>
+                                                        <h1>กำลังใช้งานไฟฟ้าในขณะนี้</h1>
+                                                        <div id="container" style="min-width: 250px; height: 300px; margin: 0 auto">
+
+                                                            <script src="js/highcharts.js">
+                                                                document.write('Highcharts');
+                                                            </script>
+
+
+                                                        </div>
+
+                                                    </div>
                                         </div>
+
                                     </div>
+                                    </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="https://code.highcharts.com/highcharts.js"></script>
+                    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                    <script src="js/jquery-3.2.0.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+                    <script src="https://code.highcharts.com/highcharts.js"></script>
+                    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                    <script src="js/jquery-3.2.0.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/connectFirebase.js"></script>
 
-
-
-
-
-
-                                    <script src="js/jquery-3.2.0.min.js"></script>
-                                    <script src="js/bootstrap.min.js"></script>
 
 
 </body>
