@@ -5,18 +5,43 @@
 <head>
 
 
+
+
+
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB2_l8HIycLAdM6a9vA9XMaS_VPqxmBK1o",
+            authDomain: "datacontro.firebaseapp.com",
+            databaseURL: "https://datacontro.firebaseio.com",
+            storageBucket: "datacontro.appspot.com",
+            messagingSenderId: "585589132177"
+        };
+        firebase.initializeApp(config);
+    </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css.css">
-    <script src="css/css.css"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDCM1ZDEa4256l5uaN_8s8Lqb8rOFkd_qk",
+            authDomain: "test1-59b46.firebaseapp.com",
+            databaseURL: "https://test1-59b46.firebaseio.com",
+            storageBucket: "test1-59b46.appspot.com",
+            messagingSenderId: "179860541723"
+        };
+        firebase.initializeApp(config);
+    </script>
+
 
 
 
@@ -110,27 +135,93 @@
                                             <div class="row">
 
                                                 <div class="col-md-4">
-                                                    <div class="well" <a href="#">>
+                                                    <div class="well">
                                                         <h4>S101</h4>
-                                                        <hr>
-                                                        <h4>แสงสว่าง</h4>
-                                                        </right>
-                                                        <div onmouseover="Status(this)" onmouseout="Status1(this)" style="font-color:#D94A38;width:160px;height:20px;;">
-                                                        </div>
-                                                        <br><br>
-                                                        <h4>เครื่องปรับอากาศ </h4>
-                                                        <div onmouseover="Status(this)" onmouseout="Status1(this)" style="font-color:#D94A38;width:160px;height:20px;;">
-                                                        </div>
-                                                        <br>
-                                                        <hr>จำนวนคน
-                                                        <p id="userinRoom"></p>
-                                                        <hr>
+                                                        <hr> แสงสว่าง
 
+
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40"></right>
+                                                        <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
                                                     </div>
                                                 </div>
 
 
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S102</h4>
+                                                        <hr> แสงสว่าง
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                        <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                    </div>
+                                                </div>
 
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S103</h4>
+                                                        <hr> แสงสว่าง</h4>
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                        <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S104</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S105</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S106</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S107</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S108</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S109</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
 
 
                                                 <div class="container-fludid">
@@ -141,30 +232,15 @@
                                         </div>
                                     </div>
 
-
-                                    <script>
-                                        function Status(obj) {
-                                            obj.innerHTML = "กำลังใช้งาน "
-                                        }
-
-                                        function Status1(obj) {
-                                            obj.innerHTML = "สถานะไม่ใช้งาน "
-                                        }
+                                    <script src="project/js/jquery-3.2.0.min.js">
                                     </script>
-
-                                    <script src="js/jquery-3.2.0.min.js">
-                                    </script>
-                                    <script src="js/bootstrap.min.js"></script>
+                                    <script src="project/js/bootstrap.min.js"></script>
 
 
                                     <script src="js/jquery-3.2.0.min.js"></script>
                                     <script src="js/bootstrap.min.js"></script>
 
                                     <script src="js/connectFirebase.js"></script>
-
-
-
-
 
 
 </body>
