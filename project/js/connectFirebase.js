@@ -1,4 +1,4 @@
-
+var stac = new Array();
 
 
   // Initialize Firebase
@@ -15,23 +15,24 @@
 
 db =firebase.database();
 
-
 var Airone = db.ref('Airone');
       Airone.on('value', function(snapshot) {
         console.log("Airone:"+snapshot.val());
-        var sum = snapshot.val();
-        insertQueue(sum)
-        // document.querySelector("#Airone > input").checked = snapshot.val();
+        // var sum = snapshot.val();
+        // stac.push(sum)
+         document.querySelector("#Airone > input").checked = snapshot.val();
 });
-
       var Airtwo = db.ref('Airtwo');
       Airtwo.on('value', function(snapshot) {
         console.log("Airtwo:"+snapshot.val());
-       // document.querySelector("#Airtwo > input").checked = snapshot.val();
+        // var sum1 = snapshot.val();
+        // stac.push(sum1)
+
+       document.querySelector("#Airtwo > input").checked = snapshot.val();
 });
       var Current = db.ref('Current');
       Current.on('value', function(snapshot) {
-        console.log("Current:"+snapshot.val());
+        // console.log("Current:"+snapshot.val());
         // document.querySelector("#ledroom > input").checked = snapshot.val();
 });
 
@@ -58,7 +59,7 @@ var Airone = db.ref('Airone');
         // document.querySelector("#ledroom > input").checked = snapshot.val();
 });
       var runAirone = db.ref('runAirone');
-      Airone.on('value', function(snapshot) {
+      runAirone.on('value', function(snapshot) {
         console.log("runAirone:"+snapshot.val());
         document.querySelector("#runAirone > input").checked = snapshot.val();
 });
@@ -70,29 +71,29 @@ var Airone = db.ref('Airone');
 });
 
 
-console.log(runAirtwo);
-
-
-var stac = new Array();
-var getArray = []
-console.log(getArray)
 
 
 
 
-function insertQueue(item){
-    for (var i = 0; i < item.length; i++) {
-      inQueue(item[i])
-       }
-
-    }
-
-function inQueue(data){
 
 
-     stac.push(data)
 
-    }
+
+
+
+// function insertQueue(item){
+//     for (var i = 0; i < item.length; i++) {
+//       inQueue(item[i])
+//        }
+
+//     }
+
+// function inQueue(data){
+
+
+//      stac.push(data)
+
+//     }
 
     chackDataQueue(stac)
 
@@ -127,8 +128,9 @@ function timeOut(){
   // while(!isEmpty()){
   setInterval(function() { 
     stac2 = stac.shift(); 
-
-  console.log(stac2);
+    Airone.set(stac2)
+    Airtwo.set(stac2)
+  // console.log(stac2);
   }, 3000)
    // }
 }

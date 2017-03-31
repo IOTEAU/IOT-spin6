@@ -17,7 +17,7 @@ $(document).ready(function() {
                     var series = this.series[0];
                     setInterval(function() {
                         var x = (new Date()).getTime(), // current time
-                            y = C
+                            y = 0;
                         series.addPoint([x, y], true, true);
                     }, 1000);
                 }
