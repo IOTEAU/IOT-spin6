@@ -1,8 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -14,22 +18,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
     <title>ห้องเรียนที่ใช้งาน</title>
 </head>
 
 <body>
 
-    <div class="container-fludid">
-
-
 
 
     <div class="container">
 
-
         <div class=".container-fluid">
             <div class="row">
+
+
                 <div class="col-sm-3 well">
+
+
+
                     <form role="form">
                         <div class="well">
                             <div class="form-group">
@@ -46,6 +56,8 @@
                             <button type="sign in" class="btn btn-default">เข้าสู่ระบบ</button>
                         </div>
                     </form>
+
+
                     <div class="well">
                         <h3>
                             กรุณาเลือกตึก
@@ -60,7 +72,11 @@
                         <p>
                             <a href="#">M</a>
                         </p>
+
+
                     </div>
+
+
                     <div class="well" </div>
                         <h3>ตารางการใช้ห้องเรียน
                             <hr>
@@ -68,22 +84,15 @@
                     </div>
                 </div>
 
-                <div class="container-fludid">
-
-
 
 
 
                 <div class="container-fluid">
-
                     <div class="row">
                         <div class="col-sm-8 ">
                             <div class="well">
 
-                                <center>
-                                    <h4>ตึก S</h4>
-                                    <hr>
-                                </center>
+
 
                                 <div class="container-fluid">
                                     <div class="row">
@@ -92,73 +101,36 @@
                                                 <ul class="pager">
                                                     <div class="well">
                                                         <li class="previous">
-                                                            <a href="#" onclick="mySlide('previous');"> <span aria-hidden="true">&larr;</span> ย้อนกลับ</a>
+                                                            <a href="#page1.html" onclick="mySlide('previous');"> <span aria-hidden="true">&larr;</span> ย้อนกลับ</a>
                                                         </li>
                                                         <li class="next"><a href="page2.html" onclick="mySlide('next');"><span aria-hidden="true">&rarr;</span>ถัดไป</a></li>
+
+
+
                                                         <center>
                                                             <h4 id="room">ห้อง S101 </h4>
                                                         </center>
+
                                                         <hr>
                                                         <div class="row">
 
-                                                            <div class="col-sm-6">
-
-
 
                                                             <div class="col-lg-4">
-
                                                                 <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Very_Basic/idea-100.png" title="Idea" width="100">
                                                                 <h4>แสงสว่าง</h4>
+
                                                                 <!--toggle button-->
                                                                 <label class="switch" id="Light_Row_one">
-                                                                    <input onclick="Light_Row_one.set(+this.checked)" type="checkbox" checked>
-                                                                    <div class="slider round"></div>
-                                                                </label>
-                                                                <br>
-                                                                <br>
+                                                            <input onclick="Light_Row_one.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div></label><br><br>
+
                                                                 <label class="switch" id="Light_Row_two">
-                                                                    <input onclick="Light_Row_two.set(+this.checked)" type="checkbox" checked>
-                                                                    <div class="slider round"></div>
-                                                                </label>
-                                                                <br>
-                                                                <br>
+
+                                                            <input onclick="Light_Row_two.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div></label><br><br>
+
                                                                 <label class="switch" id="Light_Row_three">
-                                                                    <input onclick="Light_Row_three.set(+this.checked)" type="checkbox" checked>
-                                                                    <div class="slider round"></div>
-                                                                </label>
-                                                                <br>
-                                                                <br>
+                                                            <input onclick="Light_Row_three.set(+this.checked)" type="checkbox" checked><div class="slider round"></div></label><br><br>
+
                                                             </div>
-
-                                                            <li>
-                                                                <div class="col-sm-6">
-                                                                    <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Household/air_conditioner-100.png" title="Air Conditioner" width="100">
-                                                                    <h4>เครื่องปรับอากาศ</h4>
-                                                                    <!--toggle button-->
-                                                                    <label class="switch" id="Airone">
-                                                                        <input onclick="Airone.set(+this.checked)" type="checkbox" checked>
-                                                                        <div class="slider round"></div>
-                                                                    </label>
-                                                                    <br>
-                                                                    <br>
-                                                                    <label class="switch" id="Airtwo">
-                                                                        <input onclick="Airtwo.set(+this.checked)" type="checkbox" checked>
-                                                                        <div class="slider round"></div>
-                                                                    </label>
-                                                                    <br>
-                                                                    <br>
-                                                                </div>
-                                                </ul>
-                                            </nav>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <script src="js/jquery-3.2.0.min.js"></script>
-                                    <script src="js/bootstrap.min.js"></script>
-                                    <script src="js/connectFirebase.js"></script>
-                                    <script scr="js/Queue.js"></script>
-
                                                             <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Household/air_conditioner-100.png" title="Air Conditioner" width="100">
                                                             <h4>เครื่องปรับอากาศ</h4>
 
@@ -210,7 +182,6 @@
                     <script src="js/jquery-3.2.0.min.js"></script>
                     <script src="js/bootstrap.min.js"></script>
                     <script src="js/connectFirebase.js"></script>
-
 
 
 
